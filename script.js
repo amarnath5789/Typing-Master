@@ -1,18 +1,31 @@
 // define the time limit
 let TIME_LIMIT = 60;
-let a=Math.floor(Math.random() * (7 - 1) ) + 1;
+
 // define quotes to be used
 let quotes_array = [
   "Life is too short to waste any amount of time on wondering what other people think about you. In the first place, if they had better things going on in their lives, they wouldn't have the time to sit around and talk about you. What's important to me is not others' opinions of me, but what's important to me is my opinion of myself.",
+
   "If a man is called to be a street sweeper, he should sweep streets even as a Michaelangelo painted, or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so well that all the hosts of heaven and earth will pause to say, 'Here lived a great street sweeper who did his job well.",
-
+  
   "Every day, think as you wake up, today I am fortunate to be alive, I have a precious human life, I am not going to waste it. I am going to use all my energies to develop myself, to expand my heart out to others; to achieve enlightenment for the benefit of all beings.",
-
+  
   "If you can keep your head when all about you Are losing theirs and blaming it on you, If you can trust yourself when all men doubt you, But make allowance for their doubting too; If you can wait and not be tired by waiting, Or being lied about, don't deal in lies, Or being hated, don't give way to hating, And yet don't look too good, nor talk too wise",
-
+  
   "As long as people have been on this earth, the moon has been a mystery to us. Think about it. She is strong enough to pull the oceans, and when she dies away, she always comes back again. My mama used to tell me Our Lady lived on the moon and that I should dance when her face was bright and hibernate when it was dark.",
-
+  
   "The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day.",
+
+  "I said to my soul, be still and wait without hope, for hope would be hope for the wrong thing; wait without love, for love would be love of the wrong thing; there is yet faith, but the faith and the love are all in the waiting. Wait without thought, for you are not ready for thought: So the darkness shall be the light, and the stillness the dancing.",
+
+  "Man often becomes what he believes himself to be. If I keep on saying to myself that I cannot do a certain thing, it is possible that I may end by really becoming incapable of doing it. On the contrary, if I have the belief that I can do it, I shall surely acquire the capacity to do it even if I may not have it at the beginning.",
+
+  "Owning our story can be hard but not nearly as difficult as spending our lives running from it. Embracing our vulnerabilities is risky but not nearly as dangerous as giving up on love and belonging and joy—the experiences that make us the most vulnerable.",
+
+  "Whatever you do, you need courage. Whatever course you decide upon, there is always someone to tell you that you are wrong. There are always difficulties arising that tempt you to believe your critics are right. To map out a course of action and follow it to an end requires some of the same courage that a soldier needs.",
+
+  "A human being is a part of the whole called by us universe, a part limited in time and space. He experiences himself, his thoughts and feeling as something separated from the rest, a kind of optical delusion of his consciousness. This delusion is a kind of prison for us, restricting us to our personal desires and to affection for a few persons nearest to us.",
+
+  "Pain is a pesky part of being human, I've learned it feels like a stab wound to the heart, something I wish we could all do without, in our lives here. Pain is a sudden hurt that can't be escaped. But then I have also learned that because of pain, I can feel the beauty, tenderness, and freedom of healing.",
 ];
 
 // selecting required elements
@@ -36,12 +49,12 @@ let errors = 0;
 let accuracy = 0;
 let characterTyped = 0;
 let current_quote = "";
-let quoteNo = a;
 let timer = null;
+let a = Math.floor(Math.random() * (quotes_array.length - 1) ) + 1;
 
 function updateQuote() {
   quote_text.textContent = null;
-  current_quote = quotes_array[quoteNo];
+  current_quote = quotes_array[a];
 
   // separate each character and make an element
   // out of each of them to individually style them

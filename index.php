@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="quote my-4 rounded"> Click on the area below to start typing</div>
-                    <textarea class="p-4 mt-4 bg-dark text-light rounded lead input_area"
+                    <textarea class="p-4 my-4 bg-dark text-light rounded lead input_area"
                         placeholder="Start typing here..." onfocus="startGame()"
                         oninput="processCurrentText()"></textarea>
 
