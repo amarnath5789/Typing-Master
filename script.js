@@ -1,6 +1,6 @@
 // define the time limit
 let TIME_LIMIT = 60;
-
+let a=Math.floor(Math.random() * (7 - 1) ) + 1;
 // define quotes to be used
 let quotes_array = [
   "Life is too short to waste any amount of time on wondering what other people think about you. In the first place, if they had better things going on in their lives, they wouldn't have the time to sit around and talk about you. What's important to me is not others' opinions of me, but what's important to me is my opinion of myself.",
@@ -36,7 +36,7 @@ let errors = 0;
 let accuracy = 0;
 let characterTyped = 0;
 let current_quote = "";
-let quoteNo = 0;
+let quoteNo = a;
 let timer = null;
 
 function updateQuote() {
