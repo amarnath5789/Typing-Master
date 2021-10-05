@@ -44,11 +44,22 @@
                         </div>
                     </div>
                     <div class="quote my-4 rounded"> Click on the area below to start typing</div>
-                    <textarea class="p-4 my-4 bg-dark text-light rounded lead input_area" placeholder="Start typing here..." onfocus="startGame()" oninput="processCurrentText()"></textarea>
+                    <textarea class="p-4 my-3 bg-dark text-light rounded lead input_area" placeholder="Start typing here..." onfocus="startGame()" oninput="processCurrentText()"></textarea>
 
-                    <button class="btn btn-outline-success restart_btn" id="editbtn" onclick="resetValues()">
+                    <button class="btn btn-outline-success restart_btn mb-4" id="editbtn" onclick="resetValues()">
                         Restart</button><span class="btn-circle-animation"></span>
 
+                    <h6 className="mt-5">Tip!</h6>
+                    <ul>
+                        <li>
+                            Word Per Minute (WPM) is measured by calculating how many
+                            words you can type in 1 minute.
+                        </li>
+                        <li>
+                            Character Per Minute (CPM) calculates how many characters are
+                            typed per minute.
+                        </li>
+                    </ul>
                     <hr class="my-4" />
                     <div class="mb-5">
                         <h6 class="py-2">Average Typing Speeds</h6>
