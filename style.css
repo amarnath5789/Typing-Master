@@ -5,6 +5,15 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  /* border-bottom: 1px black solid;
+  box-shadow: black;*/
+  box-shadow: 0px 0px 5px 0px #0000004f;
+}
+
 .heading {
   font-size: 3rem;
   color: black;
@@ -14,6 +23,10 @@ body {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.main-content{
+  margin-top: 5rem;
 }
 
 .cpm,
