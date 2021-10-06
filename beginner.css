@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  /* border-bottom: 1px black solid;
+    box-shadow: black;*/
+  box-shadow: 0px 0px 5px 0px #0000004f;
+}
+
+.main-content {
+  margin-top: 5rem;
+}
