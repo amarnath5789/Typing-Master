@@ -46,7 +46,7 @@ body {
   width: 100%;
   background-color: #212529;
   font-size: 1.5rem;
-  padding: 25px;
+  padding: 12px;
   text-align: center;
   color: rgb(108, 117, 125);
 }
@@ -55,7 +55,7 @@ body {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 20px;
+  padding: 12px;
   overflow: hidden;
   border: 0px;
 }

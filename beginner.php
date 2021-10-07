@@ -34,8 +34,8 @@
       </div>
       <div class="col-sm-12 col-md-8 order-md-1">
         <div class="container">
-          <div class="text-center mt-4 header">
-            <h1>How Fast Can You Type?</h1>
+          <div class="text-center mt-2 header">
+            <h1 class="mb-3">LEVEL : Beginner</h1>
             <p class="lead">Type The Given Word Within
               <span class="text-success" id="seconds">7</span> Seconds and find out how fast can
               you type in real world!
@@ -50,8 +50,7 @@
               <div class="col-md-6 mx-auto">
                 <h2 class="display-2 mb-3" id="current-word">hello</h2>
                 <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
-                <button id="startgame" onclick="startGame(this)" class="btn btn-success mt-4 mx-2">Start Game</button>
-                <button onclick="removeScore(this)" class="btn btn-danger mt-4 mx-2">Remove Score</button>
+                <button id="startgame" onclick="startGame(this)" class="btn btn-success mt-4 mx-2">Start</button>
                 <h4 class="mt-4" id="message"></h4>
               </div>
             </div>
@@ -67,20 +66,7 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="container text-center">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <h2 class="display-2 mb-5" id="current-word">hello</h2>
-        <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
-        <button id="startgame" onclick="startGame(this)" class="btn btn-success mt-5">Start Game</button>
-        <button onclick="removeScore(this)" class="btn btn-danger mt-5">Remove Score</button>
-        <h4 class="mt-3" id="message"></h4>
-      </div>
-    </div>
-  </div> -->
-
-  <script src="main.js"></script>
+  <script src="beginner.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 

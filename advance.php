@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="intermediate.css" />
-    <title>CPPSECRETS | Typing Master - Intermediate</title>
+    <link rel="stylesheet" href="advance.css" />
+    <title>CPPSECRETS | Typing Master - Advanced</title>
 </head>
 
 <body>
@@ -32,9 +32,9 @@
             <div class="col-sm-12 col-md-8 order-md-1">
                 <div class="container">
                     <div class="text-center mt-1 header">
-                        <h1 class="mb-2">LEVEL : Intermediate</h1>
+                        <h1 class="mb-2">LEVEL : Advanced</h1>
                         <p class="lead">
-                            Start the one-minute Typing speed test and find out how fast can
+                            Start the half-minute Typing speed test and find out how fast can
                             you type in real world!
                         </p>
                         <div class="alert alert-danger" role="alert" style="background-color: #f9bfc400; color: #c30012;">Just start typing and you can use
@@ -76,7 +76,7 @@
             <div class="col-sm-6 col-md-2 order-md-2 px-5 ">
                 <ul class="list-unstyled text-center small">
                     <li class="list-item my-1 py-4 border rounded">
-                        Timers<span class="d-block display-4 curr_time">60</span>
+                        Timers<span class="d-block display-4 curr_time">30</span>
                     </li>
                     <li class="list-item my-1 py-4 border rounded errors">
                         Errors<span class="d-block display-4 curr_errors">0</span>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </div>
-    <script src="intermediate.js"></script>
+    <script src="advance.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 

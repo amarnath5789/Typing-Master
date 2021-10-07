@@ -3,13 +3,13 @@ let TIME_LIMIT = 60;
 
 // define quotes to be used
 let quotes_array = [
-  "Life is too short to waste any amount of time on wondering what other people think about you. In the first place, if they had better things going on in their lives, they wouldn't have the time to sit around and talk about you. What's important to me is not others' opinions of me, but what's important to me is my opinion of myself.",
+  "Life is too short to waste any amount of time on wondering what other people think about you. In the first place, if they had better things going on in their lives, they wouldn't have the time to sit around and talk about you. What is important to me is not others opinions of me, but what is important to me is my opinion of myself.",
 
-  "If a man is called to be a street sweeper, he should sweep streets even as a Michaelangelo painted, or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so well that all the hosts of heaven and earth will pause to say, 'Here lived a great street sweeper who did his job well.",
+  "If a man is called to be a street sweeper, he should sweep streets even as a Michaelangelo painted, or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so well that all the hosts of heaven and earth will pause to say, Here lived a great street sweeper who did his job well.",
   
-  "Every day, think as you wake up, today I am fortunate to be alive, I have a precious human life, I am not going to waste it. I am going to use all my energies to develop myself, to expand my heart out to others; to achieve enlightenment for the benefit of all beings.",
+  "Every day, think as you wake up, today I am fortunate to be alive, I have a precious human life, I am not going to waste it. I am going to use all my energies to develop myself, to expand my heart out to others to achieve enlightenment for the benefit of all beings.",
   
-  "If you can keep your head when all about you Are losing theirs and blaming it on you, If you can trust yourself when all men doubt you, But make allowance for their doubting too; If you can wait and not be tired by waiting, Or being lied about, don't deal in lies, Or being hated, don't give way to hating, And yet don't look too good, nor talk too wise",
+  "If you can keep your head when all about you are losing theirs and blaming it on you, If you can trust yourself when all men doubt you, But make allowance for their doubting too If you can wait and not be tired by waiting, Or being lied about, do not deal in lies, Or being hated, do not give way to hating, And yet do not look too good, nor talk too wise",
   
   "As long as people have been on this earth, the moon has been a mystery to us. Think about it. She is strong enough to pull the oceans, and when she dies away, she always comes back again. My mama used to tell me Our Lady lived on the moon and that I should dance when her face was bright and hibernate when it was dark.",
   
@@ -19,13 +19,13 @@ let quotes_array = [
 
   "Man often becomes what he believes himself to be. If I keep on saying to myself that I cannot do a certain thing, it is possible that I may end by really becoming incapable of doing it. On the contrary, if I have the belief that I can do it, I shall surely acquire the capacity to do it even if I may not have it at the beginning.",
 
-  "Owning our story can be hard but not nearly as difficult as spending our lives running from it. Embracing our vulnerabilities is risky but not nearly as dangerous as giving up on love and belonging and joy—the experiences that make us the most vulnerable.",
+  "Owning our story can be hard but not nearly as difficult as spending our lives running from it. Embracing our vulnerabilities is risky but not nearly as dangerous as giving up on love and belonging and joy the experiences that make us the most vulnerable.",
 
   "Whatever you do, you need courage. Whatever course you decide upon, there is always someone to tell you that you are wrong. There are always difficulties arising that tempt you to believe your critics are right. To map out a course of action and follow it to an end requires some of the same courage that a soldier needs.",
 
   "A human being is a part of the whole called by us universe, a part limited in time and space. He experiences himself, his thoughts and feeling as something separated from the rest, a kind of optical delusion of his consciousness. This delusion is a kind of prison for us, restricting us to our personal desires and to affection for a few persons nearest to us.",
 
-  "Pain is a pesky part of being human, I've learned it feels like a stab wound to the heart, something I wish we could all do without, in our lives here. Pain is a sudden hurt that can't be escaped. But then I have also learned that because of pain, I can feel the beauty, tenderness, and freedom of healing.",
+  "Pain is a pesky part of being human, I have learned it feels like a stab wound to the heart, something I wish we could all do without, in our lives here. Pain is a sudden hurt that can't be escaped. But then I have also learned that because of pain, I can feel the beauty, tenderness, and freedom of healing.",
 ];
 
 // selecting required elements
@@ -194,24 +194,34 @@ function finishGame() {
   cpm_group.style.display = "block";
   wpm_group.style.display = "block";
 
-  if(wpm > 0 && wpm < 20){
-    wpm_group.style.backgroundColor= "#eb4841";
-    wpm_group.style.color= "white";
+  if (wpm > 0 && wpm < 20) {
+    wpm_group.style.backgroundColor = "#eb4841";
+    wpm_group.style.color = "white";
+    document.getElementById("item1").style.transform = "scale(1.3)";
+    document.getElementById("item1").style.color = "black";
+  } 
+  else if (wpm >= 20 && wpm < 40) {
+    wpm_group.style.backgroundColor = "#f48847";
+    wpm_group.style.color = "white";
+    document.getElementById("item2").style.transform = "scale(1.3)";
+    document.getElementById("item2").style.color = "black";
+  } 
+  else if (wpm >= 40 && wpm < 60) {
+    wpm_group.style.backgroundColor = "#ffc84a";
+    wpm_group.style.color = "white";
+    document.getElementById("item3").style.transform = "scale(1.3)";
+    document.getElementById("item3").style.color = "black";
   }
-  else if(wpm >= 20 && wpm < 40){
-    wpm_group.style.backgroundColor= "#f48847";
-    wpm_group.style.color= "white";
+   else if (wpm >= 60 && wpm < 80) {
+    wpm_group.style.backgroundColor = "#a6c34c";
+    wpm_group.style.color = "white";
+    document.getElementById("item4").style.transform = "scale(1.3)";
+    document.getElementById("item4").style.color = "black";
   }
-  else if(wpm >= 40 && wpm < 60){
-    wpm_group.style.backgroundColor= "#ffc84a";
-    wpm_group.style.color= "white";
-  }
-  else if(wpm >= 60 && wpm < 80){
-    wpm_group.style.backgroundColor= "#a6c34c";
-    wpm_group.style.color= "white";
-  }
-  else if(wpm >= 80){
-    wpm_group.style.backgroundColor= "#4ec04e";
-    wpm_group.style.color= "white";
+   else if (wpm >= 80) {
+    wpm_group.style.backgroundColor = "#4ec04e";
+    wpm_group.style.color = "white";
+    document.getElementById("item5").style.transform = "scale(1.3)";
+    document.getElementById("item5").style.color = "black";
   }
 }

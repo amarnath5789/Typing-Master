@@ -61,9 +61,9 @@
                 LEVELS
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../Typing-Master/beginner.php">Beginner</a></li>
-                    <li><a class="dropdown-item" href="../Typing-Master/intermediate.php">Intermediate</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="../Typing-Master/beginner.php">Beginner</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="../Typing-Master/intermediate.php">Intermediate</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="../Typing-Master/advance.php">Advanced</a></li>
                 </ul>
             </div>
         </div>

@@ -6,7 +6,7 @@ window.addEventListener("load", init);
 const levels = {
   easy: 7,
   medium: 3,
-  hard: 1
+  hard: 1,
 };
 
 // To change level
@@ -15,7 +15,7 @@ const currentLevel = levels.easy;
 let time = currentLevel;
 let currentscore = 0;
 let isPlaying;
-let high
+let high;
 
 // DOM Elements
 const wordInput = document.querySelector("#word-input");
@@ -27,48 +27,84 @@ const seconds = document.querySelector("#seconds");
 const highscore = document.getElementById("highscore");
 
 const words = [
+  "longest",
+  "road",
+  "market",
   "hat",
+  "denialist",
   "river",
+  "bike",
   "lucky",
+  "single",
+  "thirstry",
+  "celebrity",
   "statue",
   "generate",
+  "soup",
   "stubborn",
   "cocktail",
   "runaway",
+  "report",
+  "enough",
+  "next",
+  "awesome",
+  "micro",
+  "walk",
+  "social",
   "joke",
+  "title",
   "developer",
+  "target",
   "establishment",
   "hero",
+  "weak",
   "javascript",
+  "contact",
+  "monster",
+  "weapon",
   "nutrition",
+  "influencer",
+  "anxiety",
   "revolver",
   "echo",
+  "patient",
+  "zero",
   "siblings",
+  "book",
+  "boxing",
   "investigate",
+  "thermometer",
   "horrendous",
   "symptom",
   "laughter",
   "magic",
+  "water",
+  "misgendering",
+  "boycotts",
+  "tomorrow",
+  "hair",
+  "culture",
   "master",
   "space",
-  "definition"
+  "definition",
+  "waste",
+  "career",
 ];
 
 // Initialize Game
 function init() {
   seconds.innerHTML = currentLevel;
 
-  highscore.innerHTML = localStorage.getItem('high')
+  highscore.innerHTML = localStorage.getItem("high");
 
-  wordInput.addEventListener("input", startMatch)
-
+  wordInput.addEventListener("input", startMatch);
 }
 
 function startGame(button) {
-  if(button.innerHTML == "Exit Game"){
-    document.location.reload()
+  if (button.innerHTML == "Exit Game") {
+    document.location.reload();
   } else {
-    button.innerHTML = "Exit Game"
+    button.innerHTML = "Exit Game";
     setInterval(countdown, 1000);
     // Check game status
     setInterval(checkStatus, 50);
@@ -76,8 +112,8 @@ function startGame(button) {
 }
 
 function removeScore() {
-  window.localStorage.clear()
-  highscore.innerHTML = 0
+  window.localStorage.clear();
+  highscore.innerHTML = 0;
 }
 
 // Start match
@@ -88,14 +124,14 @@ function startMatch() {
     showWord(words);
     wordInput.value = "";
     currentscore++;
-    if (currentscore > localStorage.getItem('high', high)) {
-      localStorage.setItem('high',currentscore)
-      highscore.innerHTML = localStorage.getItem('high')
+    if (currentscore > localStorage.getItem("high", high)) {
+      localStorage.setItem("high", currentscore);
+      highscore.innerHTML = localStorage.getItem("high");
     }
   }
 
-    scoreDisplay.innerHTML = currentscore;
-    highscore.innerHTML = localStorage.getItem('high')
+  scoreDisplay.innerHTML = currentscore;
+  highscore.innerHTML = localStorage.getItem("high");
 }
 
 // Match currentWord to wordInput
@@ -112,7 +148,7 @@ function matchWords() {
 // Pick & show random word
 function showWord(words) {
   // Generate random array index
-  const randIndex = Math.floor(Math.random() * words.length);
+  const randIndex = Math.floor(Math.random() * (words.length - 1)) + 1;
   // Output random word
   currentWord.innerHTML = words[randIndex];
 }
@@ -126,9 +162,8 @@ function countdown() {
   } else if (time === 0) {
     // Game is over
     isPlaying = false;
-    document.getElementById("startgame").innerHTML = "Start Game"
-    document.location.reload()
-    
+    document.getElementById("startgame").innerHTML = "Start Game";
+    document.location.reload();
   }
   // Show time
   timeDisplay.innerHTML = time;
@@ -139,6 +174,6 @@ function checkStatus() {
   if (!isPlaying && time === 0) {
     message.innerHTML = "Game Over!!!";
     score = 0;
-    scoreDisplay.innerHTML = 0
+    scoreDisplay.innerHTML = 0;
   }
 }
