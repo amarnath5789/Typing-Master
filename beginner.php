@@ -21,9 +21,6 @@
     <div class="row">
       <div class="col-sm-6 col-md-2 order-md-0 px-5">
         <ul class="list-unstyled text-center small">
-          <!-- <li class="list-item my-1 py-4 border rounded wpm">
-            WPM<span class="d-block display-4 curr_wpm">0</span>
-          </li> -->
           <li class="list-item my-1 py-4 border rounded cpm">
             Score<span class="d-block display-4 curr_cpm" id="score">0</span>
           </li>

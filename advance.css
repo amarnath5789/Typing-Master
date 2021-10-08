@@ -10,6 +10,7 @@ body {
     flex-wrap: wrap;
     background-color: white;
     box-shadow: 0px 0px 5px 0px #0000004f;
+    padding: 0px;
   }
   
   .heading {
@@ -24,7 +25,7 @@ body {
   }
   
   .main-content {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   
   .cpm,
