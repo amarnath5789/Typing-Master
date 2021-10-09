@@ -46,7 +46,7 @@
             <div class="row">
               <div class="col-md-6 mx-auto">
                 <h2 class="display-2 mb-3" id="current-word">hello</h2>
-                <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
+                <input type="text" class="form-control form-control-lg" placeholder="Click to Start Button..." id="word-input" autofocus>
                 <button id="startgame" onclick="startGame(this)" class="btn btn-success mt-4 mx-2">Start</button>
                 <h4 class="mt-4" id="message"></h4>
               </div>

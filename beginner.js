@@ -26,6 +26,7 @@ const message = document.querySelector("#message");
 const seconds = document.querySelector("#seconds");
 const highscore = document.getElementById("highscore");
 
+
 const words = [
   "longest",
   "road",
@@ -91,6 +92,7 @@ const words = [
   "career",
 ];
 
+
 // Initialize Game
 function init() {
   seconds.innerHTML = currentLevel;
@@ -101,9 +103,10 @@ function init() {
 }
 
 function startGame(button) {
-  if (button.innerHTML == "Exit Game") {
+  if (button.innerHTML == "Exit Game"){
     document.location.reload();
-  } else {
+  } 
+  else{
     button.innerHTML = "Exit Game";
     setInterval(countdown, 1000);
     // Check game status
@@ -124,7 +127,7 @@ function startMatch() {
     showWord(words);
     wordInput.value = "";
     currentscore++;
-    if (currentscore > localStorage.getItem("high", high)) {
+    if (currentscore > localStorage.getItem("high", high)){
       localStorage.setItem("high", currentscore);
       highscore.innerHTML = localStorage.getItem("high");
     }
@@ -139,7 +142,8 @@ function matchWords() {
   if (wordInput.value === currentWord.innerHTML) {
     message.innerHTML = "Correct!!!";
     return true;
-  } else {
+  } 
+  else {
     message.innerHTML = "";
     return false;
   }
@@ -159,7 +163,8 @@ function countdown() {
   if (time > 0) {
     // Decrement
     time--;
-  } else if (time === 0) {
+  } 
+  else if (time === 0) {
     // Game is over
     isPlaying = false;
     document.getElementById("startgame").innerHTML = "Start Game";
